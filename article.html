@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelaku Pemarangan di Desa Dampang Masih Berkeliaran, Kinerja Polres Bulukumba Disorot - DesaMedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2d4a80;
+            --secondary: #d4af37;
+            --accent: #e53e3e;
+            --dark: #1a202c;
+            --light: #f7fafc;
+            --gray: #718096;
+            --gray-light: #e2e8f0;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+        }
+
+        .header-top {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+        }
+
+        .header-top-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-top-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-top-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-top a {
+            color: var(--white);
+        }
+
+        .header-top a:hover {
+            color: var(--secondary);
+        }
+
+        .header-main {
+            padding: 1rem 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .logo-tagline {
+            font-size: 0.75rem;
+            color: var(--gray);
+            margin-top: -5px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            font-weight: 500;
+            color: var(--dark);
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+
+        nav ul li a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        nav ul li a.active::after {
+            width: 100%;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            color: var(--dark);
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Breaking News */
+        .breaking-news {
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 0.75rem 0;
+        }
+
+        .breaking-news-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .breaking-label {
+            background-color: var(--dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .breaking-content {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .breaking-text {
+            white-space: nowrap;
+            animation: scrollText 20s linear infinite;
+        }
+
+        @keyframes scrollText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Article Content */
+        .article-content {
+            padding: 3rem 0;
+        }
+
+        .article-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .article-main {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .article-category {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary);
+            color: var(--white);
+            font-size: 0.875rem;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 400px;
+            background-color: var(--gray-light);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .article-body {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body h2 {
+            font-size: 1.75rem;
+            margin: 2.5rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .article-body h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .article-body blockquote {
+            border-left: 4px solid var(--secondary);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--gray);
+        }
+
+        .article-body ul, .article-body ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--light);
+            color: var(--dark);
+            border-radius: 4px;
+            font-size: 0.875rem;
+            transition: var(--transition);
+        }
+
+        .tag:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .article-share {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--gray-light);
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .share-label {
+            font-weight: 600;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .share-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--light);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .share-btn:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .article-author {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            background-color: var(--light);
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--gray-light);
+            flex-shrink: 0;
+        }
+
+        .author-info h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .author-bio {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Related News */
+        .related-news {
+            padding: 3rem 0;
+            background-color: var(--light);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .news-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .news-image {
+            height: 200px;
+            background-color: var(--gray-light);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+        }
+
+        .news-category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: var(--primary-light);
+            color: var(--white);
+            font-size: 0.75rem;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+        }
+
+        .news-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-excerpt {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-widget {
+            background-color: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .widget-title {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .popular-news {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .popular-item {
+            display: flex;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .popular-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .popular-rank {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            flex-shrink: 0;
+            width: 30px;
+        }
+
+        .popular-content {
+            flex: 1;
+        }
+
+        .popular-title {
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .popular-meta {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+
+        .categories-list {
+            list-style: none;
+        }
+
+        .categories-list li {
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+        .categories-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .categories-list a {
+            display: flex;
+            justify-content: space-between;
+            color: var(--dark);
+        }
+
+        .categories-list a:hover {
+            color: var(--primary);
+        }
+
+        .category-count {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo span {
+            color: var(--secondary);
+        }
+
+        .footer-about p {
+            color: #a0a0a0;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--primary);
+        }
+
+        .footer-title {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #a0a0a0;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a0a0a0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .article-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                display: none;
+            }
+            
+            nav ul {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .article-title {
+                font-size: 1.75rem;
+            }
+            
+            .article-image {
+                height: 250px;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .article-author {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="container header-top-container">
+            <div class="header-top-left">
+                <span><i class="fas fa-map-marker-alt"></i> Desa Sukamaju, Kec. Sukajaya</span>
+                <span><i class="fas fa-clock"></i> Senin - Jumat: 08:00 - 16:00</span>
+            </div>
+            <div class="header-top-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Main -->
+    <header>
+        <div class="header-main">
+            <div class="container header-container">
+                <div class="logo-area">
+                    <a href="index.html" class="logo">Desa<span>Media</span></a>
+                    <div class="logo-tagline">Portal Berita Desa Terpercaya</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="pemerintahan.html">Pemerintahan</a></li>
+                        <li><a href="pembangunan.html">Pembangunan</a></li>
+                        <li><a href="ekonomi.html">Ekonomi</a></li>
+                        <li><a href="pendidikan.html">Pendidikan</a></li>
+                        <li><a href="kesehatan.html" class="active">Kesehatan</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="mobile-menu">☰</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breaking News -->
+    <div class="breaking-news">
+        <div class="container breaking-news-container">
+            <div class="breaking-label">BREAKING</div>
+            <div class="breaking-content">
+                <div class="breaking-text">Pembangunan Jalan Desa Sukamaju Tahap II Telah Dimulai - Diharapkan Selesai dalam 6 Bulan</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <section class="article-content">
+        <div class="container article-container">
+            <div class="article-main">
+                <div class="article-header">
+                    <span class="article-category">KEAMANAN</span>
+                    <h1 class="article-title">Pelaku Pemarangan di Desa Dampang Masih Berkeliaran, Kinerja Polres Bulukumba Disorot</h1>
+                    <div class="article-meta">
+                        <span><i class="far fa-calendar"></i> 15 Juli 2023</span>
+                        <span><i class="far fa-user"></i> Ahmad Fauzi</span>
+                        <span><i class="far fa-eye"></i> 1.245 Dilihat</span>
+                        <span><i class="far fa-clock"></i> 5 menit membaca</span>
+                    </div>
+                </div>
+
+                <div class="article-image" style="background-image: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')"></div>
+
+                <div class="article-body">
+                    <p><strong>BULUKUMBA</strong> - Aksi pemarangan (pembakaran) yang terjadi di Desa Dampang, Kecamatan Kindang, Kabupaten Bulukumba, hingga kini masih menjadi perhatian serius masyarakat. Pelaku yang diduga kuat sebagai otak dibalik aksi tersebut masih berkeliaran bebas, membuat warga resah dan menuntut kinerja Polres Bulukumba untuk segera menuntaskan kasus ini.</p>
+
+                    <p>Kejadian bermula pada Minggu (9/7/2023) malam lalu, ketika sebuah rumah milik warga bernama Andi (45) di Dusun Bonto Mate'ne, Desa Dampang, dibakar oleh orang tidak dikenal. Akibat kejadian tersebut, rumah tersebut ludes dilalap si jago merah dan mengakibatkan kerugian material diperkirakan mencapai Rp 150 juta.</p>
+
+                    <h2>Kronologi Kejadian</h2>
+
+                    <p>Menurut keterangan korban, Andi, kejadian berlangsung sekitar pukul 22.30 WITA. Saat itu, ia dan keluarganya sedang tertidur lelap di dalam rumah. Tiba-tiba, mereka terbangun oleh suara gemericik kaca jendela yang pecah disusul bau bensin yang menyengat.</p>
+
+                    <p>"Saya langsung bangun dan melihat api sudah mulai membesar di ruang tamu. Saya berteriak meminta tolong dan berusaha menyelamatkan keluarga," kenang Andi dengan suara bergetar.</p>
+
+                    <p>Beruntung, tetangga sekitar cepat merespon dan membantu memadamkan api. Namun, upaya tersebut sudah terlambat karena api telah melahap hampir seluruh bagian rumah.</p>
+
+                    <blockquote>
+                        "Kami meminta Polres Bulukumba untuk segera menangkap pelaku. Selama ini kami hidup dalam ketakutan karena pelaku masih berkeliaran," ujar salah seorang warga.
+                    </blockquote>
+
+                    <h2>Motif Diduga Masalah Lahan</h2>
+
+                    <p>Berdasarkan informasi yang dihimpun, aksi pembakaran ini diduga kuat berkaitan dengan sengketa lahan yang telah berlangsung lama antara korban dengan seorang oknum yang memiliki pengaruh di desa tersebut.</p>
+
+                    <p>"Sudah beberapa kali terjadi ancaman terhadap keluarga kami terkait masalah lahan ini. Kami sudah melaporkan ke pihak berwajib, tetapi tidak ada tindakan tegas," ungkap Andi.</p>
+
+                    <p>Kapolres Bulukumba, AKBP Rudi Harsono, ketika dikonfirmasi membenarkan adanya laporan kasus pembakaran rumah di Desa Dampang. Menurutnya, pihaknya telah membentuk tim khusus untuk mengusut tuntas kasus ini.</p>
+
+                    <h2>Kinerja Polres Bulukumba Disorot</h2>
+
+                    <p>Lambannya penanganan kasus ini membuat sejumlah elemen masyarakat menilai kinerja Polres Bulukumba perlu disorot. Beberapa tokoh masyarakat bahkan telah mendatangi Mapolres Bulukumba untuk meminta kejelasan proses hukum.</p>
+
+                    <p>"Kami kecewa dengan penanganan kasus ini. Sudah seminggu lebih, tetapi belum ada perkembangan signifikan. Masyarakat merasa tidak aman," tegas Hasan, salah seorang tokoh pemuda Desa Dampang.</p>
+
+                    <p>Ia menambahkan, warga desa telah memberikan beberapa petunjuk penting kepada penyidik, termasuk saksi mata yang melihat pelaku meninggalkan lokasi kejadian. Namun, hingga kini belum ada langkah penangkapan yang dilakukan.</p>
+
+                    <h2>Dampak Terhadap Warga</h2>
+
+                    <p>Kejadian ini tidak hanya menimbulkan kerugian material bagi korban, tetapi juga trauma psikologis yang mendalam, terutama bagi anak-anak korban yang hingga kini masih ketakutan setiap malam.</p>
+
+                    <p>"Anak saya yang berusia 7 tahun sekarang sering terbangun tengah malam sambil menangis. Dia takut api akan datang lagi," ujar istri Andi dengan mata berkaca-kaca.</p>
+
+                    <p>Selain itu, warga sekitar juga mengaku merasa tidak nyaman dengan keberadaan pelaku yang masih berkeliaran di sekitar desa. Beberapa warga bahkan mengaku telah melihat pelaku beberapa kali melintas di depan rumah korban.</p>
+
+                    <p>Hingga berita ini diturunkan, proses penyidikan masih terus dilakukan. Polres Bulukumba berjanji akan segera menuntaskan kasus ini dan mengamankan pelaku. Masyarakat berharap janji tersebut tidak hanya sebatas wacana, tetapi benar-benar diwujudkan dalam tindakan nyata.</p>
+
+                    <div class="article-tags">
+                        <a href="#" class="tag">#Bulukumba</a>
+                        <a href="#" class="tag">#Pemarangan</a>
+                        <a href="#" class="tag">#DesaDampang</a>
+                        <a href="#" class="tag">#PolresBulukumba</a>
+                        <a href="#" class="tag">#KeamananDesa</a>
+                    </div>
+
+                    <div class="article-share">
+                        <span class="share-label">Bagikan:</span>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="share-btn"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="article-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h3>Ahmad Fauzi</h3>
+                            <p class="author-bio">Jurnalis senior DesaMedia dengan pengalaman lebih dari 10 tahun meliput isu-isu sosial dan pemerintahan di tingkat desa. Fokus pada pemberitaan yang akurat dan mendalam untuk masyarakat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Berita Populer</h3>
+                    <div class="popular-news">
+                        <div class="popular-item">
+                            <div class="popular-rank">1</div>
+                            <div class="popular-content">
+                                <h4 class="popular-title">Program Bantuan UMKM Desa Ditingkatkan</h4>
+                                <div class="popular-meta">1.2K dilihat • 2 hari lalu</div>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <div class="popular-rank">2</div>
+                            <div class="popular-content">
+                                <h4 class="popular-title">Wisata Alam Desa Mulai Dilirik Wisatawan</h4>
+                                <div class="popular-meta">980 dilihat • 3 hari lalu</div>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <div class="popular-rank">3</div>
+                            <div class="popular-content">
+                                <h4 class="popular-title">Pembangunan Pusat Kesehatan Desa Dimulai</h4>
+                                <div class="popular-meta">850 dilihat • 4 hari lalu</div>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <div class="popular-rank">4</div>
+                            <div class="popular-content">
+                                <h4 class="popular-title">Pelatihan Digital Marketing untuk Produk Lokal</h4>
+                                <div class="popular-meta">720 dilihat • 5 hari lalu</div>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <div class="popular-rank">5</div>
+                            <div class="popular-content">
+                                <h4 class="popular-title">Festival Kuliner Tradisional Sukses Digelar</h4>
+                                <div class="popular-meta">650 dilihat • 6 hari lalu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Kategori</h3>
+                    <ul class="categories-list">
+                        <li><a href="pemerintahan.html">Pemerintahan <span class="category-count">24</span></a></li>
+                        <li><a href="pertanian.html">Pertanian <span class="category-count">18</span></a></li>
+                        <li><a href="kesehatan.html">Kesehatan <span class="category-count">15</span></a></li>
+                        <li><a href="pendidikan.html">Pendidikan <span class="category-count">22</span></a></li>
+                        <li><a href="ekonomi.html">Ekonomi <span class="category-count">16</span></a></li>
+                        <li><a href="keamanan.html">Keamanan <span class="category-count">12</span></a></li>
+                        <li><a href="pembangunan.html">Pembangunan <span class="category-count">20</span></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Related News -->
+    <section class="related-news">
+        <div class="container">
+            <h2 class="section-title">Berita Terkait</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="news-content">
+                        <span class="news-category">KEAMANAN</span>
+                        <h3 class="news-title">Polres Bulukumba Gelar Patroli Rutin di Desa-Desa Rawan</h3>
+                        <p class="news-excerpt">Upaya pencegahan kejahatan ditingkatkan dengan patroli rutin di desa-desa yang rawan tindak kriminal.</p>
+                        <div class="news-meta">
+                            <span>12 Juli 2023</span>
+                            <span>Oleh: Redaksi</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="news-content">
+                        <span class="news-category">PEMERINTAHAN</span>
+                        <h3 class="news-title">Bupati Bulukumba Instruksikan Percepatan Penyelesaian Konflik Lahan</h3>
+                        <p class="news-excerpt">Bupati mengeluarkan instruksi khusus untuk menyelesaikan berbagai konflik lahan yang terjadi di desa-desa.</p>
+                        <div class="news-meta">
+                            <span>10 Juli 2023</span>
+                            <span>Oleh: Tim Pemerintahan</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')"></div>
+                    <div class="news-content">
+                        <span class="news-category">SOSIAL</span>
+                        <h3 class="news-title">Komunitas Peduli Desa Dampingi Korban Kebakaran</h3>
+                        <p class="news-excerpt">Berbagai bantuan mulai mengalir untuk keluarga korban kebakaran di Desa Dampang.</p>
+                        <div class="news-meta">
+                            <span>8 Juli 2023</span>
+                            <span>Oleh: Relawan</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Desa<span>Media</span></div>
+                    <p>Media berita terpercaya yang mengedepankan informasi akurat dan relevan untuk masyarakat desa. Menjadi jembatan antara pemerintah desa dan masyarakat.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-container">
+                    <h3 class="footer-title">Kategori</h3>
+                    <ul class="footer-links">
+                        <li><a href="pemerintahan.html">Pemerintahan</a></li>
+                        <li><a href="pertanian.html">Pertanian</a></li>
+                        <li><a href="kesehatan.html">Kesehatan</a></li>
+                        <li><a href="pendidikan.html">Pendidikan</a></li>
+                        <li><a href="ekonomi.html">Ekonomi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-container">
+                    <h3 class="footer-title">Tautan Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="redaksi.html">Redaksi</a></li>
+                        <li><a href="pedoman.html">Pedoman Media</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-container">
+                    <h3 class="footer-title">Kontak</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Desa No. 123, Kecamatan</li>
+                        <li><i class="fas fa-phone"></i> (021) 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@desamedia.id</li>
+                        <li><i class="fas fa-clock"></i> Senin - Jumat: 08:00 - 16:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DesaMedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+                nav.style.flexDirection = 'column';
+                nav.style.position = 'absolute';
+                nav.style.top = '100%';
+                nav.style.left = '0';
+                nav.style.width = '100%';
+                nav.style.backgroundColor = 'var(--white)';
+                nav.style.padding = '1rem 0';
+                nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Search functionality
+        document.querySelector('.search-btn').addEventListener('click', function() {
+            alert('Fitur pencarian akan segera tersedia!');
+        });
+
+        // Share buttons functionality
+        document.querySelectorAll('.share-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Artikel akan dibagikan!');
+            });
+        });
+
+        // Simple fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.news-card, .popular-item');
+            
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
